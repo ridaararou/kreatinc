@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  color: $primary;
+  height: 100vh;
+  background-color: $secondary;
+  background-image: url("../img/header-illustration.png");
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-family: Ivy Mode;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: $font-size-lg;
+    line-height: 1.8;
+  }
+}

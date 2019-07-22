@@ -1,0 +1,11 @@
+.btn {
+  &-scroll {
+    position: absolute;
+    bottom: 15%;
+    left: 1%;
+    transform: rotate(-90deg);
+  }
+  &-link:hover {
+    text-decoration: none;
+  }
+}
