@@ -1,11 +1,27 @@
 .btn {
+  
   &-scroll {
+    padding: 0;
     position: absolute;
-    bottom: 15%;
-    left: 1%;
+    bottom: 10%;
+    left: 0;
     transform: rotate(-90deg);
   }
-  &-link:hover {
-    text-decoration: none;
+  &-link {
+    padding: 0;
+    &:hover {text-decoration: none;}
+  }
+
+  &-default {
+    //display: block;
+    //margin: 0 auto;
+    color: $primary;
+    font-weight: 700;
+    border: transparent;
+    background-color: transparent;
+    padding: .1rem .2rem;
+    .underline {
+      border-bottom: solid 3px $danger;
+    }
   }
 }

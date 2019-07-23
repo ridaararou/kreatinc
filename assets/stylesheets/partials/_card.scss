@@ -1,0 +1,47 @@
+.card {
+  border: transparent;
+
+  &-primary {
+    .card-img {
+      position: relative;
+      overflow: hidden;
+      &:hover .door-left {transform: translateX(-100%);}
+      &:hover .door-right {transform: translateX(100%);}
+      .door-left,
+      .door-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        transition: all 1s ease;
+      }
+      .door-left {
+        left: 0;
+      }
+      .door-right {
+        right: 0;
+      }
+    }
+   
+    .card-body {
+      padding: 1.7rem 0;
+      .card-title {margin-bottom: .25rem;}
+      .card-text {
+        color: $secondary;
+      }
+    }
+  }
+
+  &-default {
+    justify-content: center;
+    .card-img-top {width: 55%;}
+    .card-body {
+      padding: 1.7rem 0;
+      .card-title {margin-bottom: 1.5rem;}
+      .card-text {
+        color: $secondary;
+        margin-bottom: .8rem;
+      }
+    } 
+  }
+}

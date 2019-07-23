@@ -31,121 +31,182 @@
 </head>
 
 <body>
-
   <header class="header">
     <nav class="navbar navbar-light bg-transparent">
       <a class="navbar-brand" href="#">
         <img src="img/logo/logo-full.svg" width="150" alt="logo">
       </a>
       <div class="float-right">
-        <div class="mode d-inline-block align-baseline">
+        <button class="btn btn-link">
           <img src="img/icon-dark-mode.svg" width="20" alt="dark mode">
-        </div>
-        <div class="burger d-inline-block">
-          <div class="line mb-1"></div>
-          <div class="line line2 mb-1"></div>
-          <div class="line "></div>
+        </button>
+        <input type="checkbox" id="burger-show" class="d-none">
+        <label for="burger-show" class="toggle-burger">
+          <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3 mb-0"></div>
+          </div>
+        </label>
+        <div class="menu">
+          <ul class="list-unstyled menu-items">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#">Work</a></li> 
+            <li class="list-item"><a href="#">Services</a></li> 
+            <li class="list-item"><a href="#">Team</a></li>
+            <li class="list-item"><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-      
       <div class="row">
         <div class="col-md-6">
-          <h1>We build websites that actually drive results</h1>
+          <h1>We build websites that actually drive results.</h1>
           <p>Kreatinc is a team of web designers, developers, copy writers and marketing consultants who design and build websites that drive leads, sales, and deeper engagement.</p>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-link btn-scroll"><b>Scroll</b></button>
+    <a href="#" class="btn btn-scroll"><span style="font-size: 15px; margin-right: .7rem;vertical-align: text-bottom">&#9472; &#9675; &#9472; </span><b>Scroll</b></a>
   </header>
   <div class="container">
     <section class="section">
-      <h1><span class="small">Selected</span><br> Work</h1>
+      <h1 class="title"><span class="small">Selected</span><br>Work</h1>
       <div class="row">
         <div class="col-md-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card card-primary">
+            <div class="card-img">
+              <img src="img/1.png" class="card-img-top" alt="door">
+              <img src="img/door-left.png" class="door-left" alt="door">
+              <img src="img/door-right.png" class="door-right" alt="door">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title"><a href="#">Tech-k</a></h5>
+              <p class="card-text">Website &amp; Visual Identity</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card card-primary mb-4">
+            <div class="card-img">
+              <img src="img/2.png" class="card-img-top" alt="door">
+              <img src="img/door-left.png" class="door door-left" alt="door">
+              <img src="img/door-right.png" class="door door-right" alt="door">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title"><a href="#">Ostrolucky</a></h5>
+              <p class="card-text">Branding &amp; Webisite</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card card-primary mb-4">
+            <div class="card-img">
+              <img src="img/3.png" class="card-img-top" alt="door">
+              <img src="img/door-left.png" class="door door-left" alt="door">
+              <img src="img/door-right.png" class="door door-right" alt="door">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title"><a href="#">AIS</a></h5>
+              <p class="card-text">Brand Identity &amp; Motion Design</p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card card-primary">
+            <div class="card-img">
+              <img src="img/4.png" class="card-img-top" alt="door">
+              <img src="img/door-left.png" class="door door-left" alt="door">
+              <img src="img/door-right.png" class="door door-right" alt="door">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title"><a href="#">DoxxBet</a></h5>
+              <p class="card-text">App UI/UX</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <h1>Our Services</h1>
+      <h1 class="title"><span class="small">Our</span><br>Services</h1>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-md-3">
+          <div class="card card-default">
+            <img src="img/our-services-icons/icon-digital-experiences.svg" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Digital Experience</h5>
+              <p class="card-text">Responsive Websites</p>
+              <p class="card-text">Mobile &amp; Desktop App Design</p>
+              <p class="card-text">Wearables &amp; VR Design</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-md-3 offset-md-1">
+          <div class="card card-default">
+            <img src="img/our-services-icons/icon-branding.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Branding</h5>
+              <p class="card-text">Visual Identity Design</p>
+              <p class="card-text">Logo Design</p>
+              <p class="card-text">Brand Naming</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-md-3 offset-md-1">
+          <div class="card card-default">
+            <img src="img/our-services-icons/icon-content.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Content</h5>
+              <p class="card-text">Animations &amp; Videos</p>
+              <p class="card-text">Photos &amp; Illustrations</p>
+              <p class="card-text">Copywriting</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section">
-      <h1>What's on your mind?</h1>
-      <button class="btn">Tals to us<img src="img" alt="arrow"></button>
+    <section class="section2">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="text-center">
+            <h1 class="title mb-5">What is on your mind?</h1>
+            <button class="btn btn-default"><span class="underline">Talk to us</span><img src="img/arrow.svg" class="ml-2" width="5" alt="arrow"></button>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
-   <footer class="footer">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="img/logo/logo-icon-white.svg" width="35" alt="logo">
+   <footer class="footer section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="img/logo/logo-icon-white.svg" width="50" alt="logo">
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6>Phone</h6>
+            <p>+212 539 72 36 61</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6>Address</h6>
+            <p>Avenue Ali Yata, Immeuble Tecno Ayad,<br>Block C numéro 15, Al Wilaya<br> Tetouan, 93040</p>
+          </div>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-      </div>
+        <div class="row align-items-end">
+          <div class="col-md-4 mb-3">
+            <p>&copy; 2019 Kreatinc</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6>Email</h6>
+            <p class="email">contact@kreatinc.com</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-facebook.svg" width="17" alt="fb"></a>  
+            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-twitter.svg" width="17" alt="twitter"></a>  
+            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-linkedin.svg" width="17" alt="in"></a>  
+            <a href="#"><img src="img/social-media-icons/icon-instagram.svg" width="17" alt="instagram"></a>  
+          </div>
+        </div>
+      </div>  
     </footer>
   
 
