@@ -3,9 +3,49 @@
   &-scroll {
     padding: 0;
     position: absolute;
-    bottom: 10%;
+    bottom: 80px;
     left: 0;
     transform: rotate(-90deg);
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+    .scroll-container {
+      display: inline-block;
+      margin-right: 5px;
+      user-select: none;
+      cursor: pointer;
+      z-index: 2;
+      .icon {
+        width: 40px;
+        height: 11px;
+        overflow: hidden;
+        transform: translateX(.1px);
+        .jump {
+          width: 11px;
+          height: 11px;
+          position: absolute;
+          top: 0;
+          right: 1px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          border: 2px solid #212121;
+          animation: scroll1 1.5s infinite ease-out;
+          &::before, 
+          &::after {
+            content: "";
+            width: 44px;
+            height: 1px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            margin-top: -.5px;
+            background: black;
+          }
+          &::before {left: -56px;}
+          &::after {right: -56px;}
+        }
+      }
+    }
   }
   &-link {
     padding: 0;
@@ -20,8 +60,17 @@
     border: transparent;
     background-color: transparent;
     padding: .1rem .2rem;
-    .underline {
-      border-bottom: solid 3px $danger;
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $danger;
+      transition: all .5s ease;
+    }
+    &:hover::after {
+      transition: all .5s ease;
+      width: 0;
     }
   }
 }

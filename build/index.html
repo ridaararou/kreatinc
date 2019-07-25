@@ -33,15 +33,19 @@
 <body>
   <header class="header">
     <nav class="navbar navbar-light bg-transparent">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo/logo-full.svg" width="150" alt="logo">
+      <a class="navbar-brand p-0" href="#">
+        <img class="d-none d-md-inline-block" src="img/logo/logo-full.svg" width="150" alt="logo">
+        <img class="d-inline-block d-md-none" src="img/logo/logo-icon-orange.svg" width="40" alt="logo">
       </a>
       <div class="float-right">
-        <button class="btn btn-link">
-          <img src="img/icon-dark-mode.svg" width="20" alt="dark mode">
-        </button>
-        <input type="checkbox" id="burger-show" class="d-none">
-        <label for="burger-show" class="toggle-burger">
+        <input type="checkbox" id="mode-toggle" class="d-none check-2">
+        <label for="mode-toggle">
+          <div class="btn btn-link">
+            <img src="img/icon-dark-mode.svg" width="20" alt="dark mode">
+          </div>
+        </label>
+        <input type="checkbox" id="burger-show" class="d-none check-1">
+        <label for="burger-show" class="toggle-burger mb-0">
           <div class="burger">
             <div class="line line1"></div>
             <div class="line line2"></div>
@@ -49,6 +53,7 @@
           </div>
         </label>
         <div class="menu">
+          <a href="#"><img src="img/logo/logo-full-white.svg" class="menu-logo" width="150" alt="logo"></a>
           <ul class="list-unstyled menu-items">
             <li class="list-item"><a href="#">Home</a></li>
             <li class="list-item"><a href="#">Work</a></li> 
@@ -56,18 +61,31 @@
             <li class="list-item"><a href="#">Team</a></li>
             <li class="list-item"><a href="#">Contact</a></li>
           </ul>
+          <div class="menu-social">
+            <a href="#" class="mr-4 social-item-1"><img src="img/social-media-icons/icon-facebook.svg" width="17" alt="fb"></a>  
+            <a href="#" class="mr-4 social-item-2"><img src="img/social-media-icons/icon-twitter.svg" width="17" alt="twitter"></a>  
+            <a href="#" class="mr-4 social-item-3"><img src="img/social-media-icons/icon-linkedin.svg" width="17" alt="in"></a>  
+            <a href="#" class="social-item-4"><img src="img/social-media-icons/icon-instagram.svg" width="17" alt="instagram"></a>  
+          </div>
         </div>
       </div>
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-10 col-md-8 col-lg-6">
           <h1>We build websites that actually drive results.</h1>
           <p>Kreatinc is a team of web designers, developers, copy writers and marketing consultants who design and build websites that drive leads, sales, and deeper engagement.</p>
         </div>
       </div>
     </div>
-    <a href="#" class="btn btn-scroll"><span style="font-size: 15px; margin-right: .7rem;vertical-align: text-bottom">&#9472; &#9675; &#9472; </span><b>Scroll</b></a>
+    <a href="#" class="btn btn-scroll">
+      <div class="scroll-container">
+        <div class="icon">
+          <span class="jump"></span>
+        </div>
+      </div>
+      <b>Scroll</b>
+    </a>
   </header>
   <div class="container">
     <section class="section">
@@ -76,7 +94,7 @@
         <div class="col-md-6">
           <div class="card card-primary">
             <div class="card-img">
-              <img src="img/1.png" class="card-img-top" alt="door">
+              <a href="#"><img src="img/1.png" class="card-img-top" alt="product"></a> 
               <img src="img/door-left.png" class="door-left" alt="door">
               <img src="img/door-right.png" class="door-right" alt="door">
             </div>
@@ -89,7 +107,7 @@
         <div class="col-md-6">
           <div class="card card-primary mb-4">
             <div class="card-img">
-              <img src="img/2.png" class="card-img-top" alt="door">
+              <a href="#"><img src="img/2.png" class="card-img-top" alt="product"></a>  
               <img src="img/door-left.png" class="door door-left" alt="door">
               <img src="img/door-right.png" class="door door-right" alt="door">
             </div>
@@ -102,7 +120,7 @@
         <div class="col-md-6">
           <div class="card card-primary mb-4">
             <div class="card-img">
-              <img src="img/3.png" class="card-img-top" alt="door">
+              <a href="#"><img src="img/3.png" class="card-img-top" alt="product"></a>  
               <img src="img/door-left.png" class="door door-left" alt="door">
               <img src="img/door-right.png" class="door door-right" alt="door">
             </div>
@@ -115,7 +133,7 @@
         <div class="col-md-6">
           <div class="card card-primary">
             <div class="card-img">
-              <img src="img/4.png" class="card-img-top" alt="door">
+              <a href="#"><img src="img/4.png" class="card-img-top" alt="product"></a>  
               <img src="img/door-left.png" class="door door-left" alt="door">
               <img src="img/door-right.png" class="door door-right" alt="door">
             </div>
@@ -169,42 +187,45 @@
       <div class="row justify-content-center">
         <div class="col-md-7">
           <div class="text-center">
-            <h1 class="title mb-5">What is on your mind?</h1>
+            <h1 class="title mb-3 mb-md-5">What is on your mind?</h1>
             <button class="btn btn-default"><span class="underline">Talk to us</span><img src="img/arrow.svg" class="ml-2" width="5" alt="arrow"></button>
           </div>
         </div>
       </div>
     </section>
   </div>
-   <footer class="footer section2">
+   <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-5 mb-md-3">
             <img src="img/logo/logo-icon-white.svg" width="50" alt="logo">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-5 mb-md-3">
             <h6>Phone</h6>
             <p>+212 539 72 36 61</p>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-5 mb-md-3">
             <h6>Address</h6>
             <p>Avenue Ali Yata, Immeuble Tecno Ayad,<br>Block C numéro 15, Al Wilaya<br> Tetouan, 93040</p>
           </div>
         </div>
         <div class="row align-items-end">
-          <div class="col-md-4 mb-3">
-            <p>&copy; 2019 Kreatinc</p>
+          <div class="col-md-4 order-3 order-md-1 mb-0 mb-md-3">
+            <h6 class="mb-0">&copy; 2019 Kreatinc</h6>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 order-1 order-md-2 mb-5 mb-md-3">
             <h6>Email</h6>
-            <p class="email">contact@kreatinc.com</p>
+            <p class="email"><a class="text-white" href="mailto:contact@kreatinc.com">contact@kreatinc.com</a></p>
+          </div>          
+          <div class="col-md-4 order-2 order-md-3 mb-5 mb-md-3">
+            <div class="social-media">
+              <a href="#" class="mr-4"><img class="a" src="img/social-media-icons/icon-facebook.svg" width="17" alt="fb"></a>  
+              <a href="#" class="mr-4"><img class="b" src="img/social-media-icons/icon-twitter.svg" width="17" alt="twitter"></a>  
+              <a href="#" class="mr-4"><img class="c" src="img/social-media-icons/icon-linkedin.svg" width="17" alt="in"></a>  
+              <a href="#"><img src="img/social-media-icons/icon-instagram.svg" width="17" alt="instagram"></a>  
+            </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-facebook.svg" width="17" alt="fb"></a>  
-            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-twitter.svg" width="17" alt="twitter"></a>  
-            <a href="#" class="mr-4"><img src="img/social-media-icons/icon-linkedin.svg" width="17" alt="in"></a>  
-            <a href="#"><img src="img/social-media-icons/icon-instagram.svg" width="17" alt="instagram"></a>  
-          </div>
+          
         </div>
       </div>  
     </footer>
@@ -212,6 +233,26 @@
 
   <!-- JavaScript -->
   <script src="js/main.min.js"></script>
+  <script> 
+    //remove scrolling when opening menu
+    $('#burger-show').change(function() {
+       if ($('#burger-show').is(":checked")) {
+        $('body').css('overflow','hidden');
+      } else {
+        $('body').css('overflow','auto');
+      }
+    });
+
+    $('#mode-toggle').change(function() {
+       if ($('#mode-toggle').is(":checked")) {
+        $('body').attr("data-dark","true");
+        console.log('yeap')
+      } else {
+        $('body').attr("data-dark","false");
+        console.log('nope')
+      }
+    });
+  </script>
 </body>
 
 </html>

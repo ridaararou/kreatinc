@@ -15,20 +15,17 @@
         width: 50%;
         transition: all 1s ease;
       }
-      .door-left {
-        left: 0;
-      }
-      .door-right {
-        right: 0;
-      }
+      .door-left {left: 0;}
+      .door-right {right: 0;}
     }
    
     .card-body {
       padding: 1.7rem 0;
-      .card-title {margin-bottom: .25rem;}
-      .card-text {
-        color: $secondary;
+      .card-title {
+        margin-bottom: .25rem;
+        font-weight: bold;
       }
+      .card-text {color: $secondary;}
     }
   }
 
@@ -37,7 +34,10 @@
     .card-img-top {width: 55%;}
     .card-body {
       padding: 1.7rem 0;
-      .card-title {margin-bottom: 1.5rem;}
+      .card-title {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+      }
       .card-text {
         color: $secondary;
         margin-bottom: .8rem;

@@ -1,19 +1,30 @@
 .header {
   position: relative;
   color: $primary;
+  //color: var(--blue);
   height: 100vh;
   background-color: #e6e7e8;
   background-image: url("../img/header-illustration.png");
-  background-size: cover;//80% 100%
-  background-position: right center;
+  background-size: 75%;//80% 100%
+  background-position: right bottom;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-size: 120%;
+    background-position: bottom center;
+  }
 
   h1 {
     font-family: Ivy Mode;
     margin-bottom: 1.5rem;
+    @media screen and (max-width: 767px) {
+      font-size: 2rem;
+    }
   }
   p {
     font-size: $font-size-lg;
     line-height: 1.8;
+    @media screen and (max-width: 767px) {
+      font-size: 1rem
+    }
   }
 }
