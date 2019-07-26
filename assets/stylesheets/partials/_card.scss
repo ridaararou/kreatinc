@@ -1,10 +1,11 @@
 .card {
   border: transparent;
-
+  background-color: var(--white);
   &-primary {
     .card-img {
       position: relative;
       overflow: hidden;
+      .card-img-top {border-radius: 1%}
       &:hover .door-left {transform: translateX(-100%);}
       &:hover .door-right {transform: translateX(100%);}
       .door-left,
@@ -14,32 +15,50 @@
         bottom: 0;
         width: 50%;
         transition: all 1s ease;
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
       }
       .door-left {left: 0;}
       .door-right {right: 0;}
     }
    
     .card-body {
+      
       padding: 1.7rem 0;
       .card-title {
+        color: var(--primary);
         margin-bottom: .25rem;
         font-weight: bold;
       }
-      .card-text {color: $secondary;}
+      .card-text {
+        //color: $secondary;
+        color: var(--secondary);
+      }
     }
   }
 
   &-default {
     justify-content: center;
-    .card-img-top {width: 55%;}
+    background-color: var(--white);
+    .card-img-top {
+      width: 55%;
+      background-color: var(--white);
+      @media screen and (max-width: 767px) {
+        width: 30%;
+      }
+    }
     .card-body {
+      //background-color: var(--white);
       padding: 1.7rem 0;
       .card-title {
+        color: var(--primary);
         margin-bottom: 1.5rem;
         font-weight: bold;
       }
       .card-text {
-        color: $secondary;
+        //color: $secondary;
+        color: var(--secondary);
         margin-bottom: .8rem;
       }
     } 

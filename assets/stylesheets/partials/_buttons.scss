@@ -1,6 +1,8 @@
 .btn {
-  
+  box-shadow:none !important;
+  outline:0px !important;
   &-scroll {
+    color: var(--primary);
     padding: 0;
     position: absolute;
     bottom: 80px;
@@ -14,7 +16,7 @@
       margin-right: 5px;
       user-select: none;
       cursor: pointer;
-      z-index: 2;
+      //z-index: 2;
       .icon {
         width: 40px;
         height: 11px;
@@ -28,7 +30,7 @@
           right: 1px;
           border-radius: 50%;
           box-sizing: border-box;
-          border: 2px solid #212121;
+          border: 2px solid var(--primary);
           animation: scroll1 1.5s infinite ease-out;
           &::before, 
           &::after {
@@ -39,7 +41,7 @@
             overflow: hidden;
             top: 50%;
             margin-top: -.5px;
-            background: black;
+            background-color: var(--primary);
           }
           &::before {left: -56px;}
           &::after {right: -56px;}
@@ -55,7 +57,8 @@
   &-default {
     //display: block;
     //margin: 0 auto;
-    color: $primary;
+    //color: $primary;
+    color: var(--primary);
     font-weight: 700;
     border: transparent;
     background-color: transparent;

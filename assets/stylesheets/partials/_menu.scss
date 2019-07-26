@@ -8,10 +8,12 @@
   .line {
     height: 3px;
     width: 28px;
-    background-color: $primary;
+    //background-color: $primary;
+    background-color: var(--primary);
     margin-bottom: .35rem;
   }
-  .line1, 
+  .line1,
+  .line2, 
   .line3 {transition: all .5s ease;}
   .line2 {
     width: 23px;
@@ -26,28 +28,29 @@
   right: 0;
   height: 100vh;
   width: 100vw;
-  z-index: -1;
-  background-color: $primary;
-  transition: all .5s ease;
+  //z-index: -1;
+  //background-color: $primary;
+  background-color: var(--primary);
+  transition: all .8s ease;
   opacity: 0;
   transform: translateX(200%);
-  //transition-delay: .5s;
   /*
-  &::after {
-    content: '';
+  &-layer {
     position: absolute;
-    top: 0;
-    right: 0;
-    //z-index: -2;
-    height: 100vh;
-    width: 100vw;
-    background-color: $danger;
-    transform: translateX(200%);
-    transition: all .5s ease-in;
-    transition-delay: 0s;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -3;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: $danger;
+      transform: translateX(200%);
+      transition: all .8s ease-in;
+    }
   }
   */
-
   &-logo {
     position: absolute;
     top: 40px;
@@ -62,9 +65,10 @@
     transform: translate(-50%, -50%);
     font-size: 35px;
     font-weight: bold;
-    color: $white;
+    //color: $white;
+    color: var(--white);
     transition: all .5s ease;
-    transition-delay: .5s;
+    transition-delay: .8s;
     opacity: 0;
     @media screen and (max-width: 767px) {font-size: 1.5rem;}
     .list-item {
@@ -72,7 +76,8 @@
       margin-bottom: 1.5rem;
       a {
         display: inline-block;
-        color: $white;
+        //color: $white;
+        color: var(--white);
         &::after {
           content: '';
           display: block;
@@ -95,7 +100,7 @@
     left: 50%;
     transform: translateX(-50%);
     transition: all .5s ease;
-    transition-delay: .5s;
+    transition-delay: .8s;
   }
 }
 
@@ -104,9 +109,9 @@
   opacity: 1;
   transform: translateX(0);
   /*
-  &::after {
+  .menu-layer::after {
     z-index: 5;
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   */
   .menu-items {
@@ -120,7 +125,10 @@
 
 .check-1[type=checkbox]:checked ~ .toggle-burger {
   //.burger {right: 22%;}
-  .line {background-color: $white;}
+  .line {
+    //background-color: $white;
+    background-color: var(--white);
+  }
 
   .line1 {
     transition: all .5s ease;

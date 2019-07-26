@@ -1,9 +1,10 @@
 .header {
   position: relative;
-  color: $primary;
-  //color: var(--blue);
+  //color: $primary;
+  color: var(--primary);
   height: 100vh;
-  background-color: #e6e7e8;
+  //background-color: $gray-300;
+  background-color: var(--light);
   background-image: url("../img/header-illustration.png");
   background-size: 75%;//80% 100%
   background-position: right bottom;
