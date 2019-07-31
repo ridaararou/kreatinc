@@ -10055,30 +10055,13 @@ a:hover {
   height: 100vh;
   width: 100vw;
   background-color: var(--primary);
-  -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
   opacity: 0;
   -webkit-transform: translateX(200%);
   -ms-transform: translateX(200%);
   transform: translateX(200%);
-  /*
-  &-layer {
-    position: absolute;
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -3;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 100vw;
-      background-color: $danger;
-      transform: translateX(200%);
-      transition: all .8s ease-in;
-    }
-  }
-  */
+  -webkit-transition: all 0.8s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: all 0.8s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.8s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .menu-logo {
@@ -10167,12 +10150,6 @@ a:hover {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-  /*
-  .menu-layer::after {
-    z-index: 5;
-    transform: translateX(0);
-  }
-  */
 }
 
 .check-1[type=checkbox]:checked ~ .menu .menu-items {

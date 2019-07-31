@@ -31,26 +31,12 @@
   //z-index: -1;
   //background-color: $primary;
   background-color: var(--primary);
-  transition: all .8s ease;
   opacity: 0;
   transform: translateX(200%);
-  /*
-  &-layer {
-    position: absolute;
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -3;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 100vw;
-      background-color: $danger;
-      transform: translateX(200%);
-      transition: all .8s ease-in;
-    }
-  }
-  */
+  //transition: all .8s ease;
+  //transition: all .8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all .8s cubic-bezier(0, 0, 0.2, 1);
+  
   &-logo {
     position: absolute;
     top: 40px;
@@ -108,12 +94,7 @@
   z-index: 6;
   opacity: 1;
   transform: translateX(0);
-  /*
-  .menu-layer::after {
-    z-index: 5;
-    transform: translateX(0);
-  }
-  */
+  
   .menu-items {
     top: 50%;
     opacity: 1;
