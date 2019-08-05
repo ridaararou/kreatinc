@@ -9539,6 +9539,16 @@ img {
   max-width: 100%;
 }
 
+::-moz-selection {
+  background-color: #EE4137;
+  color: #fff;
+}
+
+::selection {
+  background-color: #EE4137;
+  color: #fff;
+}
+
 @font-face {
   font-family: 'Ivy Mode';
   src: url("../fonts/IvyMode/IvyMode-SemiBold.ttf");
