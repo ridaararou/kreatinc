@@ -9539,10 +9539,6 @@ img {
   max-width: 100%;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @font-face {
   font-family: 'Ivy Mode';
   src: url("../fonts/IvyMode/IvyMode-SemiBold.ttf");
@@ -9583,6 +9579,12 @@ img {
     padding-bottom: 5rem;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .navbar {
+    padding-bottom: 2rem;
   }
 }
 
@@ -9973,7 +9975,7 @@ a:hover {
 }
 
 .card-primary .card-body {
-  padding: 1.7rem 0;
+  padding: 1.7rem 0 0;
 }
 
 .card-primary .card-body .card-title {

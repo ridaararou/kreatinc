@@ -4,7 +4,7 @@
   
 <head>
   <meta charset="UTf-8">
-  <title>Kreatinc</title>
+  <title>Kreatinc.</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -41,7 +41,7 @@
         <input type="checkbox" id="mode-toggle" class="d-none check-2">
         <label for="mode-toggle">
           <div class="btn btn-link">
-            <img src="img/icon-dark-mode.svg" width="20" alt="dark mode">
+            <img src="img/icon-dark-mode.svg" class="light-dark" width="20" alt="dark-light mode">
           </div>
         </label>
         <input type="checkbox" id="burger-show" class="d-none check-1">
@@ -92,7 +92,7 @@
       <h1 class="title"><span class="small">Selected</span><br>Work</h1>
       <div class="row">
         <div class="col-md-6">
-          <div class="card card-primary">
+          <div class="card card-primary mb-5">
             <div class="card-img">
               <a href="#"><img src="img/1.png" class="card-img-top" alt="product"></a> 
               <img src="img/door-left.png" class="door-left" alt="door">
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card card-primary mb-4">
+          <div class="card card-primary mb-5">
             <div class="card-img">
               <a href="#"><img src="img/2.png" class="card-img-top" alt="product"></a>  
               <img src="img/door-left.png" class="door door-left" alt="door">
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card card-primary mb-4">
+          <div class="card card-primary mb-5 mb-md-0">
             <div class="card-img">
               <a href="#"><img src="img/3.png" class="card-img-top" alt="product"></a>  
               <img src="img/door-left.png" class="door door-left" alt="door">
@@ -148,7 +148,7 @@
     <section class="section">
       <h1 class="title"><span class="small">Our</span><br>Services</h1>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3">
           <div class="card card-default">
             <img src="img/our-services-icons/icon-digital-experiences.svg" class="card-img-top" alt="">
             <div class="card-body">
@@ -159,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 offset-md-1">
+        <div class="col-md-4 col-lg-3 offset-lg-1">
           <div class="card card-default">
             <img src="img/our-services-icons/icon-branding.svg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 offset-md-1">
+        <div class="col-md-4 col-lg-3 offset-lg-1">
           <div class="card card-default">
             <img src="img/our-services-icons/icon-content.svg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -248,20 +248,22 @@
         $('.menu-logo').attr("src","img/logo/logo-full.svg");
         $('.navbar-brand').children('img').eq(0).attr("src","img/logo/logo-full-white.svg");
         $('.navbar-brand').children('img').eq(1).attr("src","img/logo/logo-icon-white.svg");
+        $('.light-dark').attr("src","img/icon-light-mode.svg");
       } else {
         $('body').attr("data-dark","false");
         $('.footer-img').attr("src","img/logo/logo-icon-white.svg");
         $('.menu-logo').attr("src","img/logo/logo-full-white.svg");
         $('.navbar-brand').children('img').eq(0).attr("src","img/logo/logo-full.svg");
         $('.navbar-brand').children('img').eq(1).attr("src","img/logo/logo-icon-orange.svg");
+        $('.light-dark').attr("src","img/icon-dark-mode.svg");
       }
     });
     //smooth scroll
     $('.btn-scroll').click(() => {
-    $('html, body').animate({
+      $('html, body').animate({
         scrollTop: $('#work').offset().top
-    }, 1000);
-});
+      }, 1000);
+    });
   </script>
 </body>
 

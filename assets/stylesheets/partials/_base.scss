@@ -3,9 +3,7 @@ img {
   max-width: 100%;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+//::-webkit-scrollbar {display: none;}
 
 @font-face {
   font-family: 'Ivy Mode';
@@ -43,6 +41,9 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+  @media screen and (max-width: 321px) {
+    padding-bottom: 2rem;
+  }
 }
 
 .section {padding-top: 7rem;}
@@ -75,7 +76,9 @@ body {background-color: var(--white);}
 
   .small {
     font-size: 20px;
-    font-family: Proxima Nova;@media screen and (max-width: 767px) {
+    font-family: Proxima Nova;
+    //font-weight: 700;
+    @media screen and (max-width: 767px) {
       font-size: 15px;
     }
   }
