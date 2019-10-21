@@ -1,66 +1,38 @@
 .card {
   border: transparent;
-  background-color: var(--white);
+  background-color: transparent;
+  margin-bottom: 0;
   &-primary {
-    .card-img {
-      position: relative;
-      overflow: hidden;
-      .card-img-top {border-radius: 1%}
-      &:hover .door-left {transform: translateX(-100%);}
-      &:hover .door-right {transform: translateX(100%);}
-      .door-left,
-      .door-right {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 50%;
-        transition: all 1s ease;
-        @media screen and (max-width: 992px) {
-          display: none;
-        }
-      }
-      .door-left {left: 0;}
-      .door-right {right: 0;}
-    }
-   
     .card-body {
-      
-      padding: 1.7rem 0 0;
-      .card-title {
-        color: var(--primary);
-        margin-bottom: .25rem;
-        font-weight: bold;
+      padding: 0;
+      font-size: 18px;
+      @media screen and (max-width: 767px) {font-size: 16px;}
+      .card-img-title {
+        height: 20px;
+        margin-bottom: 20px;
       }
-      .card-text {
-        //color: $secondary;
-        color: var(--secondary);
+      .card-text {line-height: 2;}
+      .card-link {
+        color: $danger;
+        //font-weight: 700;
       }
     }
   }
 
   &-default {
-    justify-content: center;
-    background-color: var(--white);
-    .card-img-top {
-      width: 55%;
-      background-color: var(--white);
-      @media screen and (max-width: 767px) {
-        width: 30%;
-      }
+    font-size: 18px;
+    //@media screen and (max-width: 767px) {font-size: 16px;}
+    margin-bottom: 4rem;
+    @media screen and (max-width: 767px) {margin-bottom: 2rem;}
+
+    .card-title {
+      color: $danger;
+      font-weight: 700;
     }
-    .card-body {
-      //background-color: var(--white);
-      padding: 1.7rem 0;
-      .card-title {
-        color: var(--primary);
-        margin-bottom: 1.5rem;
-        font-weight: bold;
-      }
-      .card-text {
-        //color: $secondary;
-        color: var(--secondary);
-        margin-bottom: .8rem;
-      }
-    } 
+    .card-text {margin-bottom: 1.5rem;}
+    hr {
+      border-color: $gray-200;
+      margin: 0;
+    }
   }
 }

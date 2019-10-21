@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.08 48"><defs><style>.cls-1{fill:#05172d;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="4.08 48 28.08 24 28.08 24 28.08 24 4.08 0 0 4.08 19.92 24 0 43.92 4.08 48"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="6.282" height="11.935" viewBox="0 0 6.282 11.935">
+  <g id="arrow" transform="translate(6.282 11.935) rotate(180)">
+    <g id="Group_10" data-name="Group 10">
+      <path id="Path_54" data-name="Path 54" d="M0,5.968l.421.486,4.741,5.482,1.12-.972-4.319-5,4.319-5L5.162,0,.421,5.481Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

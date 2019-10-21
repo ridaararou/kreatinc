@@ -3,7 +3,6 @@ img {
   max-width: 100%;
 }
 
-//::-webkit-scrollbar {display: none;}
 ::selection {
   background-color: #EE4137;
   color: #fff;
@@ -28,20 +27,10 @@ img {
   font-style: normal;
 }
 
-[data-dark="true"] {
-  --primary: #fff;
-  --secondary: #ced4da;
-  --light: #05172D;
-  --white: #05172D;
-
-  .footer,
-  .email {color: #020202}
-}
-
 .navbar {
-  padding: 2.5rem 2.5rem 14rem 2.5rem;
+  padding: 1rem 0 9rem 0;
   @media screen and (max-width: 991px) {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -50,35 +39,36 @@ img {
   }
 }
 
-.section {padding-top: 7rem;}
-.section2 {padding: 7rem 0;}
+
+.section {padding: 7rem 0;}
 
 body {background-color: var(--white);}
 
 .footer {
   padding: 7rem 0;
-  //color: $white;
-  //background-color: $primary;
-  color: var(--white);
-  background-color: var(--primary);
+  color: $white;
+  background-color: $primary;
   p {margin-bottom: 0;}
   h6 {font-weight: bold;}
-  @media screen and (max-width: 767px) {
-    padding: 4rem 0;
+  @media screen and (max-width: 767px) {padding: 4rem 0;}
+  hr {
+    border-color: #f8f9fa1f;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .title {
-  //color: $primary;
-  color: var(--primary);
+  color: $primary;
   font-family: Ivy Mode;
   line-height: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
   @media screen and (max-width: 767px) {
     font-size: 2rem;
   }
 
   .small {
+    font-weight: 900;
     font-size: 20px;
     font-family: Proxima Nova;
     //font-weight: 700;
@@ -88,23 +78,20 @@ body {background-color: var(--white);}
   }
 }
 
-.email {
-  display: inline-block;
-  color: var(--white);
-  &:hover {color: var(--white);}
-  &::after {
-    content: '';
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: $danger;
-    transition: all .5s ease;
+.section-bg {background-color: #fcfcfc;}
+
+.decoration {
+  position: absolute;
+  left: -45px;
+  top: 0;
+  @media screen and (max-width: 767px) {
+    top: -20px;
   }
-  &:hover::after {
-    transition: all .5s ease;
-    width: 0;
-  }
+}
+
+.underline {
+  border-bottom: solid 2px $danger;
+  &-bold {text-decoration: underline $danger;}
 }
 
 a {
@@ -122,15 +109,6 @@ a {
   animation-iteration-count: 1;
 }
 
-
-@keyframes scroll1 {
-  
-  0% {transform:translateX(1px)}
-  
-  74% {transform:translateX(-28px)}
-
-  100% {transform:translateX(1px)}
-}
 
 @keyframes swing {
 

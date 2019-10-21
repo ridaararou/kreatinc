@@ -1,79 +1,13 @@
 .btn {
   box-shadow:none !important;
   outline:0px !important;
-  &-scroll {
-    color: var(--primary);
-    padding: 0;
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    transform: rotate(-90deg);
-    @media screen and (max-width: 1023px) {
-      display: none;
-    }
-    .scroll-container {
-      display: inline-block;
-      margin-right: 5px;
-      user-select: none;
-      cursor: pointer;
-      //z-index: 2;
-      .icon {
-        width: 40px;
-        height: 11px;
-        overflow: hidden;
-        transform: translateX(.1px);
-        .jump {
-          width: 11px;
-          height: 11px;
-          position: absolute;
-          top: 0;
-          right: 1px;
-          border-radius: 50%;
-          box-sizing: border-box;
-          border: 2px solid var(--primary);
-          animation: scroll1 1.5s infinite ease-out;
-          &::before, 
-          &::after {
-            content: "";
-            width: 44px;
-            height: 1px;
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            margin-top: -.5px;
-            background-color: var(--primary);
-          }
-          &::before {left: -56px;}
-          &::after {right: -56px;}
-        }
-      }
-    }
-  }
-  &-link {
-    padding: 0;
-    &:hover {text-decoration: none;}
-  }
 
   &-default {
-    //display: block;
-    //margin: 0 auto;
-    //color: $primary;
-    color: var(--primary);
-    font-weight: 700;
+    border-radius: 0;
+    color: $danger;
     border: transparent;
     background-color: transparent;
+    font-weight: 700;
     padding: .1rem .2rem;
-    &::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $danger;
-      transition: all .5s ease;
-    }
-    &:hover::after {
-      transition: all .5s ease;
-      width: 0;
-    }
   }
 }
