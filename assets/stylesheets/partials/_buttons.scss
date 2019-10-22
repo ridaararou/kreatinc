@@ -4,10 +4,14 @@
 
   &-default {
     border-radius: 0;
+    padding: .5rem 1.8rem;
+    color: $white;
+  }
+
+  &-outline-default {
     color: $danger;
     border: transparent;
     background-color: transparent;
     font-weight: 700;
-    padding: .1rem .2rem;
   }
 }

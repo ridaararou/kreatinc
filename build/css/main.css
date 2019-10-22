@@ -9527,154 +9527,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-::selection {
-  background-color: #EE4137;
-  color: #fff;
-}
-
-@font-face {
-  font-family: 'Ivy Mode';
-  src: url("../fonts/IvyMode/IvyMode-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/proxima-nova/Mark Simonson-ProximaNovaRegular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/proxima-nova/MarkSimonson-ProximaNovaBold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-.navbar {
-  padding: 1rem 0 9rem 0;
-}
-
-@media screen and (max-width: 991px) {
-  .navbar {
-    padding-bottom: 3rem;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .navbar {
-    padding-bottom: 2rem;
-  }
-}
-
-.section {
-  padding: 7rem 0;
-}
-
-body {
-  background-color: var(--white);
-}
-
-.footer {
-  padding: 7rem 0;
-  color: #fff;
-  background-color: #05172D;
-}
-
-.footer p {
-  margin-bottom: 0;
-}
-
-.footer h6 {
-  font-weight: bold;
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    padding: 4rem 0;
-  }
-}
-
-.footer hr {
-  border-color: #f8f9fa1f;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.title {
-  color: #05172D;
-  font-family: Ivy Mode;
-  line-height: 1;
-  margin-bottom: 7rem;
-}
-
-@media screen and (max-width: 767px) {
-  .title {
-    font-size: 2rem;
-  }
-}
-
-.title .small {
-  font-weight: 900;
-  font-size: 20px;
-  font-family: Proxima Nova;
-}
-
-@media screen and (max-width: 767px) {
-  .title .small {
-    font-size: 15px;
-  }
-}
-
-.section-bg {
-  background-color: #fcfcfc;
-}
-
-.decoration {
-  position: absolute;
-  left: -45px;
-  top: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .decoration {
-    top: -20px;
-  }
-}
-
-.underline {
-  border-bottom: solid 2px #EE4137;
-}
-
-.underline-bold {
-  -webkit-text-decoration: underline #EE4137;
-  text-decoration: underline #EE4137;
-}
-
-a {
-  color: var(--primary);
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--primary);
-}
-
-.social-media img:hover,
-.menu-social img:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
 @-webkit-keyframes swing {
   15% {
     -webkit-transform: translateX(5px);
@@ -9729,6 +9581,212 @@ a:hover {
   }
 }
 
+@-webkit-keyframes anim-arr {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-arr {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+::selection {
+  background-color: #EE4137;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url("../fonts/IvyMode/IvyMode-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova/Mark Simonson-ProximaNovaRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova/MarkSimonson-ProximaNovaBold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar {
+  padding: 1rem 0 9rem 0;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding-bottom: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .navbar {
+    padding-bottom: 2rem;
+  }
+}
+
+.section {
+  padding: 5.5rem 0;
+}
+
+.footer {
+  padding: 7rem 0;
+  color: #fff;
+  background-color: #05172D;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer h6 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 4rem 0;
+  }
+}
+
+.footer hr {
+  border-color: #f8f9fa1f;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  color: #05172D;
+  font-family: Ivy Mode;
+  line-height: 1;
+  margin-bottom: 7rem;
+}
+
+.title .small {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Proxima Nova;
+}
+
+@media screen and (max-width: 767px) {
+  .title .small {
+    font-size: 15px;
+  }
+}
+
+.section-bg {
+  background-color: #fcfcfc;
+}
+
+.decoration {
+  position: absolute;
+  left: -45px;
+  top: 0;
+}
+
+.underline {
+  border-bottom: solid 2px #EE4137;
+}
+
+.underline-bold {
+  -webkit-text-decoration: underline #EE4137;
+  text-decoration: underline #EE4137;
+}
+
+.paragraph-sm {
+  font-size: 18px;
+  line-height: 2.1;
+}
+
+@media screen and (max-width: 480px) {
+  .bg-phone {
+    height: 245px;
+    background-image: url("../img/our-team-illustration.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: -5px !important;
+    margin-left: -5px !important;
+    width: 104%;
+  }
+  .bg-phone img {
+    display: none;
+  }
+}
+
+.social-media img:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.anim-arrow {
+  -webkit-animation-name: anim-arr;
+  animation-name: anim-arr;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
 .header {
   position: relative;
   color: #05172D;
@@ -9779,11 +9837,15 @@ a:hover {
 
 .btn-default {
   border-radius: 0;
+  padding: .5rem 1.8rem;
+  color: #fff;
+}
+
+.btn-outline-default {
   color: #EE4137;
   border: transparent;
   background-color: transparent;
   font-weight: 700;
-  padding: .1rem .2rem;
 }
 
 .card {
@@ -9819,11 +9881,18 @@ a:hover {
 .card-default {
   font-size: 18px;
   margin-bottom: 4rem;
+  border-bottom: solid 1px #e9ecef;
 }
 
 @media screen and (max-width: 767px) {
   .card-default {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-default {
+    height: 135px;
   }
 }
 
@@ -9834,9 +9903,4 @@ a:hover {
 
 .card-default .card-text {
   margin-bottom: 1.5rem;
-}
-
-.card-default hr {
-  border-color: #e9ecef;
-  margin: 0;
 }
