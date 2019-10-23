@@ -27,16 +27,14 @@ img {
   font-style: normal;
 }
 
-
 .container {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-
 .navbar {
   padding: 1rem 0 9rem 0;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1025px) {
     padding-bottom: 3rem;
     padding-left: 15px;
     padding-right: 15px;
@@ -67,6 +65,10 @@ img {
   margin-bottom: 6rem;
   //@media screen and (max-width: 767px) {/*font-size: 2.5rem;*/}
 
+  &-lg {
+    @media screen and (min-width: 576px) and (max-width: 768px) {font-size: 2.5rem!important;}
+  }
+
   .small {
     font-weight: 900;
     font-size: 20px;
@@ -80,7 +82,6 @@ img {
 .decoration {
   position: absolute;
   left: -45px;
-  top: 0;
 }
 
 .underline {
@@ -97,9 +98,7 @@ img {
   @media screen and (max-width: 480px) {
     img {display: none;}
     height: 245px;
-    background-image: url("../img/our-team-illustration.png");
-    background-size: cover;
-    background-position: center;
+    background: url("../img/our-team-illustration.png") center / cover;
     margin-right: -5px!important;
     margin-left: -5px!important;
     width: 104%;
@@ -112,9 +111,4 @@ img {
   animation-iteration-count: 1;
 }
 
-.anim-arrow {
-  animation-name: anim-arr;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
+.anim-arrow {animation: anim-arr 2s ease-in infinite;}

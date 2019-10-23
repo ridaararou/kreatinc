@@ -9667,7 +9667,7 @@ img {
   padding: 1rem 0 9rem 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
   .navbar {
     padding-bottom: 3rem;
     padding-left: 15px;
@@ -9718,6 +9718,12 @@ img {
   margin-bottom: 6rem;
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .title-lg {
+    font-size: 2.5rem !important;
+  }
+}
+
 .title .small {
   font-weight: 900;
   font-size: 20px;
@@ -9737,7 +9743,6 @@ img {
 .decoration {
   position: absolute;
   left: -45px;
-  top: 0;
 }
 
 .underline {
@@ -9757,9 +9762,7 @@ img {
 @media screen and (max-width: 480px) {
   .bg-phone {
     height: 245px;
-    background-image: url("../img/our-team-illustration.png");
-    background-size: cover;
-    background-position: center;
+    background: url("../img/our-team-illustration.png") center/cover;
     margin-right: -5px !important;
     margin-left: -5px !important;
     width: 104%;
@@ -9777,25 +9780,14 @@ img {
 }
 
 .anim-arrow {
-  -webkit-animation-name: anim-arr;
-  animation-name: anim-arr;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+  -webkit-animation: anim-arr 2s ease-in infinite;
+  animation: anim-arr 2s ease-in infinite;
 }
 
 .header {
-  position: relative;
+  background: url("../img/illustration.png") right bottom/55% no-repeat #E6E7E8;
   color: #05172D;
   height: 65vh;
-  background-color: #E6E7E8;
-  background-image: url("../img/illustration.png");
-  background-size: 55%;
-  background-position: right bottom;
-  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 767px) {
@@ -9838,7 +9830,6 @@ img {
 .btn-default {
   border-radius: 0;
   padding: .5rem 1.8rem;
-  color: #fff;
 }
 
 .btn-outline-default {

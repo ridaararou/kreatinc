@@ -1,12 +1,7 @@
 .header {
-  position: relative;
+  background: url("../img/illustration.png") right bottom / 55% no-repeat #E6E7E8;
   color: $primary;
   height: 65vh;
-  background-color: #E6E7E8;
-  background-image: url("../img/illustration.png");
-  background-size: 55%;//80% 100%
-  background-position: right bottom;
-  background-repeat: no-repeat;
   @media screen and (max-width: 767px) {
     background-size: 120%;
     background-position: bottom center;
