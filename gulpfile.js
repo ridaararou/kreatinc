@@ -70,11 +70,14 @@ gulp.task('scripts', ['babel'], () => {
 gulp.task('serve', ['sass', 'babel', 'scripts'], () => {
 
   browserSync.init({
+    files: ['css/*.css', 'js/*.js', '*.html'],
+    watch: true,
     server: {
       baseDir: "./build",
       directory: true
     },
-    ghostMode: false
+    ghostMode: false,
+    online: true,
   });
 
   gulp.watch('assets/stylesheets/**/*.scss', ['sass']);
