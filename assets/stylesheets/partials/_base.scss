@@ -94,6 +94,7 @@ img {
 }
 
 .bg-phone {
+  text-align: right;
   @media screen and (max-width: 480px) {
     img {display: none;}
     height: 245px;

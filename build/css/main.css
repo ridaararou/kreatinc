@@ -9759,6 +9759,10 @@ img {
   line-height: 2.1;
 }
 
+.bg-phone {
+  text-align: right;
+}
+
 @media screen and (max-width: 480px) {
   .bg-phone {
     height: 245px;
